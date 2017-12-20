@@ -1,0 +1,36 @@
+body {
+    margin:  0 0 0 0;
+    overflow-y: hidden;
+    background: linear-gradient(60deg, #c2fff9ef,10%, #83ffeeea);
+    height: 100vh;
+    font-family: 'Nanum Pen Script', serif;
+}
+
+#MiddleBox {
+    background: rgba(255,255,255,0.9);
+    position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%);
+    padding-top: 5vh;
+    width: 50%;
+    height: 70vh;
+
+    box-shadow: 0px 0px 5px 5px #78e2ff;
+}
+
+#title {
+    font-size: 8vmax;
+    color: #55c5e4;
+    margin: 0;
+    text-align: center;
+}
+
+input{
+  font-family: 'Nanum Pen Script', serif;
+}
+
+#id_input, #pw_input1, #pw_input2, #nickname{
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  padding-left: 1vw;
+  font-size: 5vh;
+  width: 30vw;
+}

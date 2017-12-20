@@ -1,0 +1,41 @@
+@keyframes MenuHover {
+    from {
+        background-color: rgba(0,0,0,0.0);
+    }
+    to {
+        background-color: rgba(255,255,255,1.0);
+    }
+}
+
+@keyframes MenuHoverNot {
+    from {
+        background-color: rgba(255,255,255,1.0);
+    }
+    to {
+        background-color: rgba(0,0,0,0.0);
+    }
+}
+
+@keyframes aHover {
+    from {
+        color: #FFFFFF;
+    }
+    30% {
+        color: #FFFFFF;
+    }
+    to {
+        color: #55c5e4;
+    }
+}
+
+@keyframes aHoverNot {
+    from {
+        color: #55c5e4;
+    }
+    30% {
+        color: #55c5e4;
+    }
+    to {
+        color: #FFFFFF;
+    }
+}
