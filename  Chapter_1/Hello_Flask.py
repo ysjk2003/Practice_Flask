@@ -4,7 +4,7 @@ from flask import Flask
 
 app = Flask(__name__)  #객체 생성
 
-@app.route('/')  #root에 라우팅
+@app.route('/')  #root에 라우팅, 라우팅 할 URI를 요청했을 때 호출 될 함수를 바로 아래 작성하면 됨
 def hello_flask():  #특정 URL을 호출했을 때 호출되는 함수 정의, 뷰 함수라고 함
     return 'Hello Flask!'
 
