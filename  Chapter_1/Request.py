@@ -8,7 +8,7 @@ def hello_world():
 
 @app.route('/test')
 def test():
-    return render_template('post.html')
+    return render_template('post.html')  #templates폴더속 post.html을 가져옴
 
 @app.route('/post', methods=['POST'])    #methods=['POST']는 메소드를 POST형식으로 선언, 아무것도 적어주지 않으면 GET
 def post():                              #위 구문이 빠지면 client에서 form으로 정보를 보내도 서버쪽에서 받지 못함
