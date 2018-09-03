@@ -12,7 +12,7 @@ def get_proflie(username):          #127.0.0.1:5000/profile/username으로 접�
     return 'proflie : ' + username  #URI의 끝점을 endpoint라고 함, 여기서는 username이 endpoint
 
 if __name__ == '__main__':          #<int:age>같은 형태로 변수의 타입을 지정해 줄 수 도 있다. 기본값은 str
-    app.run()                       #int이외의 다른 변환기는 float와 문자열을 변환하지만 마지막에 /를 포함하는 path가 있다
+    app.run()                       #int이외의 다른 변환기는 float와 문자열을 변환하지만 마지막에 /를 포함하는 path와 UUID가 있다
     with app.test_request_context():#test_request_context()는 flask에서 제공하는 HTTP요청을 테스트 할 수 있는 함수
         print (url_for('hello'))      #url_for는 함수명으로 URI를 얻을 수 있다
         print (url_for('get_proflie', username='flask'))
