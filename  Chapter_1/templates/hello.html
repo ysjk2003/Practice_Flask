@@ -1,1 +1,7 @@
-hello {{ name }}!
+<!doctype html>
+<title>Hello from Flask</title>
+{% if name %}<!--name이 있으면 Hello name을 출력-->
+  <h1>Hello {{ name }}!</h1>
+{% else %}<!--아니면 Hello, World출력-->
+  <h1>Hello, World!</h1>
+{% endif %}<!--if문 종료-->

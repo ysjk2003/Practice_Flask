@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template
+
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('statictemplate.html') #css파일이나 javascript파일은 static폴더에 저장
+    #{{ url_for() }}을 이용해 css파일과 html연동
 
 @app.route('/hello/')
 @app.route('/hello/<name>')
