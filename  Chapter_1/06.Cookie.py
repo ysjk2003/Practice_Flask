@@ -10,5 +10,9 @@ def index():
     resp.set_cookie('username','flask')           #쿠키생성. username이 키, flask가 값
     return resp
 
+@app.route('/hello/')
+def hello():
+    return request.cookies.get('username')  #쿠키 읽기
+
 if __name__ == '__main__':
     app.run()
