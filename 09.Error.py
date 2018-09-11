@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 from flask import Flask, abort, redirect, url_for, render_template
 
 app = Flask(__name__)
@@ -8,6 +10,7 @@ def index():
 
 @app.errorhandler(404)          #사용자 정의 오류
 def page_not_found(error):
+    app.logger.error(error)  #로깅함수 에러가 나면 터미널에 출력
     return render_template('page_not_found.html'), 404
 
 @app.route('/login')
